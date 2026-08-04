@@ -3,9 +3,9 @@
  * from this one file, so you only need to update them once.
  */
 window.CINDR_SITE = {
-  supportEmail: "support@YOUR-DOMAIN.example",
-  privacyEmail: "privacy@YOUR-DOMAIN.example",
-  securityEmail: "security@YOUR-DOMAIN.example",
+  supportEmail: "dukesbarlow.web@gmail.com",
+  privacyEmail: "dukesbarlow.web@gmail.com",
+  securityEmail: "dukesbarlow.web@gmail.com",
   appStoreURL: "",
   appStoreLabel: "Coming soon for iPhone"
 };
