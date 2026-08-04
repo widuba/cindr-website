@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0d0c" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Cindr is a private, two-minute daily email cleanup for iPhone. Keep, Trash, or review unsubscribe options—without handing your inbox to another server.">
+  <meta property="og:title" content="Cindr — Clear the inbox. Keep your privacy.">
+  <meta property="og:description" content="A private, focused daily email cleanup for iPhone.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/img/cindr-icon.png">
+  <title>Cindr — Clear the inbox. Keep your privacy.</title>
+  <link rel="icon" href="/assets/img/cindr-mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/site-config.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Cindr home"><img src="/assets/img/cindr-mark.svg" alt=""><span>Cindr</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>☰</button>
+      <div class="nav-links" data-menu>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="/support/">Support</a>
+        <a class="button coral" data-app-store aria-disabled="true">Coming soon for iPhone</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Private email cleanup for iPhone</p>
+        <h1>Too many <em>red flags</em> in your inbox?</h1>
+        <p>Make a few clear decisions each day. Keep what matters, move the rest to Trash, and review safe unsubscribe options—with your mailbox data processed on your iPhone.</p>
+        <div class="hero-actions">
+          <a class="button coral" data-app-store aria-disabled="true">Coming soon for iPhone</a>
+          <a class="button ghost" href="#privacy">See how privacy works</a>
+        </div>
+        <p class="microcopy">Gmail first. Outlook and Microsoft 365 support in preparation. No Cindr account required.</p>
+      </div>
+
+      <div class="phone-stage" aria-label="Interactive preview of Cindr's email decision screen" data-swipe-demo>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-island" aria-hidden="true"></div>
+            <div class="phone-head">
+              <div><strong>Today’s cleanup</strong><br><small>14 remaining · about 2 min</small></div>
+              <div class="progress-ring" aria-label="12 messages reviewed"></div>
+            </div>
+            <div class="card-stack">
+              <article class="mail-card" data-demo-card data-state="idle">
+                <div class="decision-hint keep" aria-hidden="true">KEEP</div>
+                <div class="decision-hint trash" aria-hidden="true">TRASH</div>
+                <div class="sender">
+                  <div class="avatar" aria-hidden="true">RF</div>
+                  <div class="sender-meta"><strong>Red Flag Weekly</strong><span>newsletter@example.invalid</span></div>
+                </div>
+                <h3>Seven imaginary trends you missed</h3>
+                <p>This is a fictional message used only to demonstrate Cindr’s cleanup flow.</p>
+                <span class="card-badge">Demo message · no mailbox connected</span>
+              </article>
+            </div>
+            <div class="demo-actions" aria-label="Try the demo">
+              <button type="button" data-demo-action="trash" aria-label="Move demo message to Trash">←</button>
+              <button type="button" data-demo-action="unsubscribe" aria-label="Review unsubscribe options">↑</button>
+              <button type="button" data-demo-action="keep" aria-label="Keep demo message">→</button>
+            </div>
+            <div class="demo-status" aria-live="polite" data-demo-status>Try a decision</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">A finite daily ritual</p>
+          <h2>Three moves. Zero mystery.</h2>
+          <p>Cindr is intentionally not another full mail client. It gives you a short, focused stack and makes every mailbox-changing action clear.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="icon mint" aria-hidden="true">→</div><h3>Right keeps</h3><p>The message stays where it is. Keep is the default and makes no mailbox change.</p></article>
+          <article class="feature-card"><div class="icon coral" aria-hidden="true">←</div><h3>Left Trashes</h3><p>The message moves to your provider’s Trash. It is never permanently deleted by the cleanup flow, and Undo is available.</p></article>
+          <article class="feature-card"><div class="icon violet" aria-hidden="true">↑</div><h3>Up reviews unsubscribe</h3><p>Cindr shows the detected method first. Nothing is submitted without a clear, safe path and your confirmation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="privacy">
+      <div class="wrap trust-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Private by architecture</p>
+            <h2>Your inbox does not become our database.</h2>
+            <p>Cindr talks directly to your email provider from your iPhone. There is no Cindr mail server, no remote AI, and no ad profile built from your messages.</p>
+          </div>
+          <div class="trust-list">
+            <article class="trust-item"><div class="icon" aria-hidden="true">⌁</div><div><h3>No email passwords</h3><p>Google and Microsoft display their own authorization pages using OAuth and PKCE.</p></div></article>
+            <article class="trust-item"><div class="icon" aria-hidden="true">◉</div><div><h3>Tracking pixels stay dark</h3><p>Message content is rendered as inert text. Remote images and JavaScript do not load.</p></div></article>
+            <article class="trust-item"><div class="icon" aria-hidden="true">⌫</div><div><h3>Delete local data anytime</h3><p>Disconnect providers, remove stored tokens, and erase Cindr’s protected local state from Settings.</p></div></article>
+            <article class="trust-item"><div class="icon" aria-hidden="true">∅</div><div><h3>No content analytics</h3><p>Cindr does not sell email data, use it for ads, or use message content to train AI models.</p></div></article>
+          </div>
+        </div>
+        <aside class="trust-diagram" aria-label="Cindr data flow">
+          <p class="flow-label">Encrypted provider connection</p>
+          <div class="provider-row"><div class="provider">Google Gmail</div><div class="provider">Microsoft Graph</div></div>
+          <p class="flow-label">↕ Directly between your provider and device ↕</p>
+          <div class="device"><img src="/assets/img/cindr-mark.svg" alt=""><strong>Your iPhone</strong><small>Tokens in Keychain · protected local progress · transient message viewing</small></div>
+          <p class="flow-label">No Cindr inbox backend in the middle</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">How it fits your day</p><h2>Less inbox. More done.</h2></div>
+        <div class="steps">
+          <article class="step"><h3>Connect securely</h3><p>Authorize Gmail—and later Outlook or Microsoft 365—on the provider’s own sign-in screen.</p></article>
+          <article class="step"><h3>Review a small stack</h3><p>Make a finite number of decisions instead of staring at one endless unread count.</p></article>
+          <article class="step"><h3>Leave with closure</h3><p>See what you kept, Trashed, and reviewed for unsubscribe. Continue tomorrow without guilt.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">Straight answers</p><h2>Frequently asked questions.</h2></div>
+        <div class="faq">
+          <details><summary>Does Cindr permanently delete email?</summary><p>No. The cleanup flow moves a selected message to your email provider’s Trash. Your provider controls Trash retention, and Cindr offers Undo for supported actions.</p></details>
+          <details><summary>Can Cindr read my whole inbox?</summary><p>You authorize the mailbox permissions needed to list messages and carry out your explicit decisions. Cindr fetches full content only when you open a message and does not persist message bodies or attachments.</p></details>
+          <details><summary>Does my email pass through a Cindr server?</summary><p>No. The iPhone app communicates directly with Google or Microsoft. Cindr has no backend that receives or stores your mailbox content.</p></details>
+          <details><summary>Does Cindr use AI on my email?</summary><p>No remote AI is used. Local recommendations are based on aggregate counts and one-way sender/domain pattern keys, not uploaded message content.</p></details>
+          <details><summary>Which providers are supported?</summary><p>Gmail is the initial provider. Outlook and Microsoft 365 integration is implemented and being prepared for public use. iCloud Mail is not currently supported.</p></details>
+          <details><summary>How do I remove my data?</summary><p>Open Cindr Settings and choose Delete all Cindr data. See the <a href="/data-deletion/">complete deletion instructions</a> for provider revocation and subscription details.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-card"><h2>Your inbox can feel finished again.</h2><p>Cindr is being prepared for a small, privacy-focused iPhone release.</p><a class="button" data-app-store aria-disabled="true">Coming soon for iPhone</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="/"><img src="/assets/img/cindr-mark.svg" alt=""><span>Cindr</span></a><p>A finite, privacy-first daily email cleanup for iPhone.</p></div>
+        <div class="footer-links"><strong>Help</strong><a href="/support/">Support</a><a href="/data-deletion/">Delete your data</a><a href="/security/">Security</a></div>
+        <div class="footer-links"><strong>Legal</strong><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a data-contact="support" href="mailto:support@YOUR-DOMAIN.example">Contact</a></div>
+      </div>
+      <p class="copyright">© <span data-year>2026</span> Cindr. Gmail is a trademark of Google LLC. Outlook and Microsoft 365 are trademarks of Microsoft Corporation. Cindr is not affiliated with or endorsed by Google or Microsoft.</p>
+    </div>
+  </footer>
+</body>
+</html>

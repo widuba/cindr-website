@@ -1,0 +1,17 @@
+{
+  "name": "Cindr",
+  "short_name": "Cindr",
+  "description": "A finite, privacy-first daily email cleanup for iPhone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7f1",
+  "theme_color": "#ff453a",
+  "icons": [
+    {
+      "src": "/assets/img/cindr-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
