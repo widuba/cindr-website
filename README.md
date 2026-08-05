@@ -2,6 +2,8 @@
 
 The complete static product, support, privacy, terms, deletion, and security website for the Cindr iPhone app. It uses plain HTML, CSS, and JavaScript with no framework, package install, cookie banner, analytics, or external runtime dependency.
 
+Live site: <https://cindr-website.onrender.com>
+
 ## Pages
 
 - `/` — product site with an accessible interactive swipe demo
@@ -54,7 +56,7 @@ After choosing the permanent domain:
 
 1. Set all three real email addresses in `assets/js/site-config.js`.
 2. Add the custom domain in Render and update DNS.
-3. Add `sitemap.xml` using the final canonical domain.
+3. Replace the current Render canonical URLs and `sitemap.xml` entries with the final custom domain.
 4. Add the final App Store URL when it exists.
 5. Finalize the legal operator details with counsel.
 6. Use the domain and `/privacy/` URL in Google Cloud OAuth consent configuration.
