@@ -97,27 +97,29 @@
       </div>
     </section>
 
-    <section class="section alt" id="privacy">
-      <div class="wrap trust-grid">
-        <div>
+    <section class="section alt privacy-section" id="privacy">
+      <div class="wrap privacy-layout">
+        <div class="privacy-copy">
           <div class="section-heading">
-            <p class="eyebrow">Private by architecture</p>
-            <h2>Your inbox does not become our database.</h2>
-            <p>Cindr talks directly to your email provider from your iPhone. There is no Cindr mail server, no remote AI, and no ad profile built from your messages.</p>
+            <p class="eyebrow">Private by design</p>
+            <h2>Your inbox never visits our servers.</h2>
+            <p>Cindr connects your iPhone directly to Gmail. No Cindr inbox database, no ads built from your messages, and no remote AI reading your email.</p>
           </div>
-          <div class="trust-list">
-            <article class="trust-item"><div class="icon" aria-hidden="true">⌁</div><div><h3>No email passwords</h3><p>Google and Microsoft display their own authorization pages using OAuth and PKCE.</p></div></article>
-            <article class="trust-item"><div class="icon" aria-hidden="true">◉</div><div><h3>Tracking pixels stay dark</h3><p>Message content is rendered as inert text. Remote images and JavaScript do not load.</p></div></article>
-            <article class="trust-item"><div class="icon" aria-hidden="true">⌫</div><div><h3>Delete local data anytime</h3><p>Disconnect providers, remove stored tokens, and erase Cindr’s protected local state from Settings.</p></div></article>
-            <article class="trust-item"><div class="icon" aria-hidden="true">∅</div><div><h3>No content analytics</h3><p>Cindr does not sell email data, use it for ads, or use message content to train AI models.</p></div></article>
+          <div class="privacy-benefits">
+            <article class="privacy-benefit"><div class="privacy-icon" aria-hidden="true">⌁</div><div><h3>Google handles sign-in</h3><p>You authorize Cindr on Google’s own secure sign-in screen. Cindr never sees your password.</p></div></article>
+            <article class="privacy-benefit"><div class="privacy-icon" aria-hidden="true">◌</div><div><h3>Tracking pixels stay dark</h3><p>Messages are shown as safe text. Remote images and scripts do not load in Cindr.</p></div></article>
+            <article class="privacy-benefit"><div class="privacy-icon" aria-hidden="true">↺</div><div><h3>Your data stays in your hands</h3><p>Tokens live in iPhone Keychain. You can disconnect Gmail or delete local Cindr data anytime.</p></div></article>
           </div>
         </div>
-        <aside class="trust-diagram" aria-label="Cindr data flow">
-          <p class="flow-label">Encrypted provider connection</p>
-          <div class="provider-row"><div class="provider">Google Gmail</div><div class="provider">Microsoft Graph</div></div>
-          <p class="flow-label">↕ Directly between your provider and device ↕</p>
-          <div class="device"><img src="/assets/img/cindr-mark.png" alt=""><strong>Your iPhone</strong><small>Tokens in Keychain · protected local progress · transient message viewing</small></div>
-          <p class="flow-label">No Cindr inbox backend in the middle</p>
+        <aside class="privacy-flow-card" aria-label="Cindr data flow">
+          <p class="privacy-card-label">A direct connection</p>
+          <div class="privacy-flow">
+            <div class="privacy-node provider-node"><span class="provider-g" aria-hidden="true">G</span><div><strong>Gmail</strong><small>Google authorizes access</small></div></div>
+            <div class="privacy-connector"><span>Encrypted, direct connection</span></div>
+            <div class="privacy-node device-node"><img src="/assets/img/cindr-mark.png" alt=""><div><strong>Your iPhone</strong><small>Protected local progress</small></div></div>
+          </div>
+          <div class="privacy-no-server"><span aria-hidden="true">×</span><div><strong>No Cindr server in the middle</strong><p>Your mailbox content is not copied to a Cindr database.</p></div></div>
+          <a class="privacy-link" href="/privacy/">Read the full privacy policy <span aria-hidden="true">→</span></a>
         </aside>
       </div>
     </section>

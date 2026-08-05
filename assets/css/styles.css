@@ -257,23 +257,40 @@ h3 { font-size: 1.32rem; font-weight: 830; }
 .icon.coral { color: var(--ember); background: #fce4df; }
 .icon.ember { color: #ae6400; background: #ffebc4; }
 
-.section.alt { position: relative; overflow: hidden; background: #1a1513; color: #fffaf5; }
-.section.alt::before { position: absolute; top: -340px; right: -280px; width: 710px; height: 710px; border-radius: 50%; background: radial-gradient(circle, rgba(232, 73, 54, .22), transparent 66%); content: ""; }
+.section.alt { position: relative; overflow: hidden; background: #15110f; color: #fffaf5; }
+.section.alt::before { position: absolute; top: -360px; right: -280px; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(circle, rgba(232, 73, 54, .2), transparent 67%); content: ""; }
 .section.alt > .wrap { position: relative; }
 .alt .section-heading .eyebrow { color: var(--amber); }
-.alt .section-heading p:not(.eyebrow) { color: rgba(255, 253, 250, .7); }
-.trust-grid { display: grid; grid-template-columns: minmax(0, .93fr) minmax(390px, 1.07fr); gap: 72px; align-items: start; }
-.trust-list { display: grid; gap: 12px; }
-.trust-item { display: grid; grid-template-columns: 45px 1fr; gap: 15px; padding: 20px; border: 1px solid rgba(255,255,255,.12); border-radius: 21px; background: rgba(255,255,255,.055); }
-.trust-item .icon { display: grid; width: 45px; height: 45px; place-items: center; border-radius: 14px; background: rgba(247, 165, 28, .13); color: #ffc45b; }
-.trust-item p { margin: 5px 0 0; color: rgba(255, 253, 250, .64); font-size: .9rem; }
-.trust-diagram { position: sticky; top: 100px; padding: 32px; border: 1px solid rgba(255,255,255,.13); border-radius: 32px; background: #24201e; box-shadow: 0 22px 55px rgba(0,0,0,.2); }
-.device { width: min(265px, 100%); margin: 27px auto; padding: 21px; border: 1px solid rgba(255,255,255,.23); border-radius: 30px; background: rgba(255,255,255,.045); text-align: center; }
-.device img { width: 58px; margin: 0 auto 14px; border-radius: 14px; }
-.device small { display: block; margin-top: 4px; color: rgba(255, 253, 250, .62); font-size: .78rem; }
-.provider-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.provider { flex: 1; padding: 13px; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; background: rgba(255,255,255,.06); font-size: .82rem; font-weight: 760; text-align: center; }
-.flow-label { margin: 7px 0; color: rgba(255,253,250,.53); font-size: .74rem; text-align: center; }
+.alt .section-heading p:not(.eyebrow) { color: rgba(255, 253, 250, .76); }
+
+.privacy-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(350px, .86fr); gap: 76px; align-items: center; }
+.privacy-copy .section-heading { max-width: 650px; margin-bottom: 34px; }
+.privacy-copy .section-heading h2 { max-width: 620px; }
+.privacy-copy .section-heading p:not(.eyebrow) { max-width: 590px; font-size: 1.16rem; line-height: 1.62; }
+.privacy-benefits { display: grid; gap: 11px; max-width: 650px; }
+.privacy-benefit { display: grid; grid-template-columns: 43px 1fr; gap: 14px; padding: 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: rgba(255,255,255,.055); }
+.privacy-icon { display: grid; width: 43px; height: 43px; place-items: center; border-radius: 13px; background: rgba(247, 165, 28, .15); color: #ffc761; font-size: 1.15rem; font-weight: 900; }
+.privacy-benefit h3 { font-size: 1.06rem; letter-spacing: -.03em; }
+.privacy-benefit p { margin: 4px 0 0; color: rgba(255, 253, 250, .72); font-size: .91rem; line-height: 1.48; }
+.privacy-flow-card { position: sticky; top: 100px; padding: 30px; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #25201d; box-shadow: 0 24px 55px rgba(0,0,0,.2); }
+.privacy-card-label { margin: 0 0 22px; color: #ffbd48; font-size: .72rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.privacy-flow { padding: 20px; border: 1px solid rgba(255,255,255,.1); border-radius: 21px; background: rgba(255,255,255,.035); }
+.privacy-node { display: flex; align-items: center; gap: 13px; padding: 14px; border-radius: 15px; background: rgba(255,255,255,.07); }
+.privacy-node strong, .privacy-node small { display: block; }
+.privacy-node strong { font-size: 1rem; letter-spacing: -.02em; }
+.privacy-node small { margin-top: 2px; color: rgba(255,253,250,.64); font-size: .77rem; }
+.provider-g { display: grid; width: 37px; height: 37px; flex: 0 0 auto; place-items: center; border-radius: 11px; background: #fff; color: #4285f4; font-size: 1rem; font-weight: 900; }
+.device-node img { width: 37px; height: 37px; flex: 0 0 auto; border-radius: 11px; }
+.privacy-connector { position: relative; display: grid; min-height: 55px; place-items: center; color: rgba(255,253,250,.57); font-size: .72rem; text-align: center; }
+.privacy-connector::before { position: absolute; top: 7px; bottom: 7px; left: 50%; width: 1px; background: rgba(255, 190, 76, .48); content: ""; }
+.privacy-connector span { position: relative; z-index: 1; padding: 0 8px; background: #28221f; }
+.privacy-no-server { display: grid; grid-template-columns: 32px 1fr; gap: 11px; margin-top: 17px; padding: 16px; border-radius: 16px; background: rgba(232,73,54,.1); }
+.privacy-no-server > span { display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid rgba(255,121,95,.55); border-radius: 50%; color: #ff856e; font-size: 1.15rem; font-weight: 750; }
+.privacy-no-server strong { display: block; color: #fff5f0; font-size: .92rem; }
+.privacy-no-server p { margin: 3px 0 0; color: rgba(255,245,240,.7); font-size: .78rem; line-height: 1.42; }
+.privacy-link { display: flex; margin-top: 19px; align-items: center; justify-content: space-between; color: #fffaf5; font-size: .88rem; font-weight: 800; text-decoration: none; }
+.privacy-link span { color: #ffc45b; font-size: 1.15rem; transition: transform .18s ease; }
+.privacy-link:hover span { transform: translateX(4px); }
 
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; counter-reset: steps; border-top: 1px solid var(--line-strong); }
 .step { position: relative; min-height: 210px; padding: 27px 32px 10px 0; counter-increment: steps; }
@@ -331,58 +348,6 @@ h3 { font-size: 1.32rem; font-weight: 830; }
 .error-page h1 { margin: auto; }
 .error-page .lede { margin: 24px auto; }
 
-/* Privacy policy: optimized for reading a long, important document. */
-.privacy-page .legal-hero {
-  display: grid;
-  margin-top: 42px;
-  padding: 56px;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 355px);
-  align-items: start;
-  gap: 58px;
-  border: 1px solid var(--line);
-  border-radius: 34px;
-  background: var(--paper);
-  box-shadow: var(--shadow);
-}
-.privacy-page .legal-hero h1 { font-size: clamp(3.4rem, 6.1vw, 5.85rem); }
-.privacy-page .legal-hero .lede { margin: 20px 0 0; line-height: 1.65; }
-.policy-meta { display: flex; flex-wrap: wrap; gap: 7px; margin: 27px 0 0; color: var(--muted); font-size: .86rem; }
-.policy-meta strong { color: var(--ink); font-weight: 800; }
-.policy-at-a-glance { padding: 24px; border: 1px solid var(--line); border-radius: 24px; background: var(--paper-soft); }
-.card-label { margin: 0 0 14px; color: var(--ember-dark); font-size: .72rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
-.policy-at-a-glance ul { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
-.policy-at-a-glance li { display: grid; grid-template-columns: 25px 1fr; gap: 10px; align-items: start; }
-.policy-at-a-glance li > span { color: var(--ember); font-size: .69rem; font-weight: 900; letter-spacing: .04em; }
-.policy-at-a-glance strong { display: block; font-size: .95rem; letter-spacing: -.02em; }
-.policy-at-a-glance p { margin: 2px 0 0; color: var(--muted); font-size: .83rem; line-height: 1.42; }
-
-.privacy-page .legal-layout { margin-top: 52px; grid-template-columns: 245px minmax(0, 805px); gap: 84px; }
-.privacy-page .legal-nav { padding: 15px; border-color: var(--line); border-radius: 22px; background: var(--paper); box-shadow: 0 8px 24px rgba(45, 29, 18, .05); }
-.privacy-page .legal-nav strong { padding: 7px 9px 10px; color: var(--ink); }
-.privacy-page .legal-nav a { margin: 1px 0; padding: 7px 9px; border-radius: 9px; color: var(--muted); font-size: .86rem; font-weight: 650; line-height: 1.25; }
-.privacy-page .legal-nav a:hover { background: var(--paper-soft); color: var(--ember-dark); }
-.privacy-page .legal-content { min-width: 0; font-size: 1.02rem; }
-.privacy-page .legal-content h2 { margin: 0 0 17px; padding-top: 51px; border-top: 1px solid var(--line-strong); font-size: clamp(1.95rem, 3.3vw, 2.45rem); scroll-margin-top: 105px; }
-.privacy-page .legal-content h2:first-child { padding-top: 0; border-top: 0; }
-.privacy-page .legal-content h3 { margin: 31px 0 9px; color: var(--ink); font-size: 1.14rem; }
-.privacy-page .legal-content p, .privacy-page .legal-content li { color: var(--muted); line-height: 1.72; }
-.privacy-page .legal-content p { margin: 0 0 18px; }
-.privacy-page .legal-content ul { display: grid; gap: 8px; margin: 0 0 20px; padding: 20px 24px 20px 42px; border-radius: 18px; background: color-mix(in srgb, var(--paper) 76%, transparent); }
-.privacy-page .legal-content li { padding-left: 3px; }
-.privacy-page .legal-content li::marker { color: var(--ember); }
-.privacy-page .legal-content strong { color: var(--ink); font-weight: 800; }
-.privacy-page .legal-content a { color: var(--ember); font-weight: 800; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--ember) 55%, transparent); text-underline-offset: 3px; }
-.privacy-page .legal-content a:hover { color: var(--ember-dark); }
-.privacy-page .legal-content code { padding: 2px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .86em; }
-.privacy-page .notice { margin: 25px 0 30px; padding: 23px 25px; border: 1px solid #f2c96f; border-left: 5px solid var(--amber); border-radius: 17px; background: #fff1d4; color: #3b2a13; font-size: 1rem; line-height: 1.62; }
-.privacy-page .notice strong { color: #2a1d0d; }
-.privacy-promises { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 10px; }
-.privacy-promises article { padding: 20px; border: 1px solid var(--line); border-radius: 19px; background: var(--paper); }
-.privacy-promises article > span { display: grid; width: 33px; height: 33px; margin-bottom: 30px; place-items: center; border-radius: 10px; background: #fde8c1; color: #9d5b00; font-weight: 900; }
-.privacy-promises h3 { margin: 0; font-size: 1rem; }
-.privacy-promises p { margin: 7px 0 0 !important; font-size: .84rem; line-height: 1.48 !important; }
-
-
 @media (prefers-color-scheme: dark) {
   :root { --canvas: #100e0d; --paper: #1c1816; --paper-soft: #28221f; --ink: #fffaf5; --ink-soft: #fffaf5; --muted: #b6aaa0; --line: rgba(255,255,255,.11); --line-strong: rgba(255,255,255,.2); --shadow: 0 24px 64px rgba(0,0,0,.28); --shadow-deep: 0 35px 80px rgba(0,0,0,.45); }
   .site-header { background: color-mix(in srgb, var(--canvas) 90%, transparent); }
@@ -391,8 +356,6 @@ h3 { font-size: 1.32rem; font-weight: 830; }
   .section.alt { background: #090807; }
   .legal-content p, .legal-content li { color: #c9beb5; }
   .notice { color: #312313; }
-  .privacy-page .legal-hero, .privacy-page .legal-nav, .privacy-promises article { box-shadow: none; }
-  .privacy-page .legal-content ul { background: rgba(255,255,255,.035); }
 }
 
 @media (max-width: 900px) {
@@ -404,12 +367,10 @@ h3 { font-size: 1.32rem; font-weight: 830; }
   .hero-copy > p:not(.eyebrow) { margin-right: auto; margin-left: auto; }
   .hero-actions, .hero-proof { justify-content: center; }
   .phone-stage { min-height: 610px; }
-  .trust-grid { grid-template-columns: 1fr; gap: 42px; }
-  .trust-diagram { position: static; }
+  .privacy-layout { grid-template-columns: 1fr; gap: 42px; }
+  .privacy-flow-card { position: static; max-width: 620px; }
   .legal-layout { grid-template-columns: 1fr; gap: 30px; }
   .legal-nav { position: static; }
-  .privacy-page .legal-hero { grid-template-columns: 1fr; gap: 28px; }
-  .privacy-page .legal-layout { grid-template-columns: 1fr; gap: 31px; }
 }
 
 @media (max-width: 650px) {
@@ -433,26 +394,12 @@ h3 { font-size: 1.32rem; font-weight: 830; }
   .cta-card { padding: 48px 22px; border-radius: 28px; }
   .footer-grid { grid-template-columns: 1fr; gap: 25px; }
   .support-grid { grid-template-columns: 1fr; }
-  .privacy-page .legal-hero { margin-top: 20px; padding: 31px 22px; border-radius: 25px; }
-  .privacy-page .legal-hero h1 { font-size: clamp(2.7rem, 14vw, 3.85rem); }
-  .privacy-page .legal-hero .lede { font-size: 1.03rem; }
-  .policy-meta { margin-top: 22px; font-size: .78rem; }
-  .policy-at-a-glance { padding: 20px; border-radius: 18px; }
-  .privacy-page .legal-layout { margin-top: 32px; padding-bottom: 78px; }
-  .privacy-page .legal-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; padding: 11px; border-radius: 18px; }
-  .privacy-page .legal-nav strong { grid-column: 1 / -1; padding: 6px 8px 9px; }
-  .privacy-page .legal-nav a { padding: 8px; font-size: .78rem; }
-  .privacy-page .legal-content { font-size: 1rem; }
-  .privacy-page .legal-content h2 { margin-bottom: 14px; padding-top: 41px; font-size: 1.72rem; }
-  .privacy-page .legal-content h3 { margin-top: 26px; font-size: 1.08rem; }
-  .privacy-page .legal-content p, .privacy-page .legal-content li { line-height: 1.66; }
-  .privacy-page .legal-content ul { gap: 9px; padding: 17px 18px 17px 34px; border-radius: 15px; }
-  .privacy-page .notice { margin: 21px 0 25px; padding: 20px; border-radius: 14px; font-size: .96rem; }
-  .privacy-promises { grid-template-columns: 1fr; }
-  .privacy-promises article { display: grid; grid-template-columns: 40px 1fr; column-gap: 13px; padding: 17px; }
-  .privacy-promises article > span { width: 35px; height: 35px; margin: 0; grid-row: span 2; }
-  .privacy-promises h3 { align-self: end; }
-  .privacy-promises p { grid-column: 2; margin-top: 3px !important; }
+  .privacy-copy .section-heading p:not(.eyebrow) { font-size: 1.05rem; }
+  .privacy-benefit { grid-template-columns: 40px 1fr; padding: 17px; }
+  .privacy-icon { width: 40px; height: 40px; }
+  .privacy-flow-card { padding: 21px; border-radius: 22px; }
+  .privacy-flow { padding: 15px; }
+  .privacy-no-server { padding: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

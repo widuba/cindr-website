@@ -7,54 +7,34 @@
   <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><link rel="canonical" href="https://cindr-website.onrender.com/privacy/"><link rel="stylesheet" href="/assets/css/styles.css">
   <script src="/assets/js/site-config.js" defer></script><script src="/assets/js/site.js" defer></script>
 </head>
-<body class="legal-page privacy-page">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><img src="/assets/img/cindr-mark.png" alt=""><span>Cindr</span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>☰</button><div class="nav-links" data-menu><a href="/">Product</a><a href="/support/">Support</a><a href="/data-deletion/">Delete data</a></div></nav></header>
   <main id="main">
-    <header class="legal-hero wrap">
-      <div class="legal-hero-copy">
-        <p class="eyebrow">Your data, explained plainly</p>
-        <h1>Privacy Policy</h1>
-        <p class="lede">Cindr is designed so your mailbox data stays between Gmail and your iPhone. This policy explains what the app accesses, what stays on your device, and why.</p>
-        <p class="policy-meta"><strong>Effective</strong> August 4, 2026 <span aria-hidden="true">•</span> <strong>Updated</strong> August 5, 2026</p>
-      </div>
-      <aside class="policy-at-a-glance" aria-label="Privacy at a glance">
-        <p class="card-label">At a glance</p>
-        <ul>
-          <li><span aria-hidden="true">01</span><div><strong>No Cindr inbox server</strong><p>Your mail does not pass through or live in a Cindr database.</p></div></li>
-          <li><span aria-hidden="true">02</span><div><strong>No ads or remote AI</strong><p>We do not sell mailbox data or use it to train models.</p></div></li>
-          <li><span aria-hidden="true">03</span><div><strong>You stay in control</strong><p>Disconnect Gmail or delete Cindr’s local data whenever you want.</p></div></li>
-        </ul>
-      </aside>
-    </header>
+    <header class="legal-hero wrap"><p class="eyebrow">Your data, explained plainly</p><h1>Privacy Policy</h1><p class="lede">Cindr is designed so your mailbox data stays between your email provider and your iPhone. This policy describes exactly what the app accesses and why.</p><p><strong>Effective:</strong> August 4, 2026 · <strong>Last updated:</strong> August 4, 2026</p></header>
     <div class="legal-layout wrap">
       <nav class="legal-nav" aria-label="Privacy Policy sections"><strong>On this page</strong><a href="#summary">Summary</a><a href="#data">Data we process</a><a href="#use">How we use it</a><a href="#storage">Storage and retention</a><a href="#sharing">Sharing</a><a href="#google">Google API data</a><a href="#choices">Your choices</a><a href="#security">Security</a><a href="#contact">Contact</a></nav>
       <article class="legal-content">
         <h2 id="summary">Summary</h2>
-        <p>Cindr is an iPhone email-cleanup application. It communicates directly from your device to Gmail. Cindr does not operate a server that receives or stores your mailbox content.</p>
-        <div class="notice notice-primary"><strong>The short version:</strong> Cindr does not sell your information, use mailbox data for advertising, upload messages for remote AI processing, or use email content to train machine-learning models.</div>
-        <div class="privacy-promises" aria-label="Cindr privacy commitments">
-          <article><span aria-hidden="true">⌁</span><h3>Direct connection</h3><p>Your iPhone talks directly to Gmail when you ask Cindr to load or act on email.</p></article>
-          <article><span aria-hidden="true">◌</span><h3>Local progress</h3><p>Your cleanup progress and preferences stay protected on your device.</p></article>
-          <article><span aria-hidden="true">↗</span><h3>Clear actions</h3><p>Cindr only moves or unsubscribes from messages after your explicit choice.</p></article>
-        </div>
+        <p>Cindr is an iPhone email-cleanup application. The app communicates directly from your device to an email service you choose, such as Google Gmail or Microsoft Outlook/Microsoft 365. Cindr does not operate a server that receives or stores your mailbox content.</p>
+        <div class="notice"><strong>The short version:</strong> Cindr does not sell your information, use mailbox data for advertising, upload your messages for remote AI processing, or use email content to train machine-learning models.</div>
 
         <h2 id="data">Information Cindr processes</h2>
         <h3>Account authorization data</h3>
         <p>When you connect an email provider, Cindr receives OAuth access and refresh tokens, token expiration information, granted scopes, and basic account identity such as an email address or provider account identifier. Cindr never asks for or receives your email password.</p>
         <h3>Mailbox data</h3>
-        <p>To provide cleanup, Cindr processes message identifiers, sender information, subject lines, dates, short previews, label state, and unsubscribe metadata. Full message content is requested only when you open a message. Cindr does not persist message bodies or attachments.</p>
+        <p>To provide the cleanup experience, Cindr may process message identifiers, sender information, subject lines, dates, short previews, labels or folder state, and unsubscribe metadata. Full message content is requested only when you open a message. Message bodies and attachments are not persisted by Cindr.</p>
         <h3>Your decisions and app state</h3>
-        <p>Cindr stores the local state needed to complete and undo actions, continue an unfinished session, show progress and streaks, remember preferences, and make on-device recommendations. It uses protected one-way sender or domain pattern keys for those local recommendations. Widget data contains aggregate counts only.</p>
+        <p>Cindr stores the decisions needed to perform and undo actions, unfinished session summaries, queued actions, aggregate progress counts, goals, preferences, milestones, and one-way SHA-256 sender or domain pattern keys used for local recommendations. Widget data contains aggregate counts only.</p>
         <h3>Purchases</h3>
-        <p>Apple processes Cindr Plus purchases. Cindr receives subscription status and transaction identifiers from StoreKit only to unlock features. Cindr does not receive payment-card details.</p>
+        <p>If paid features become available, Apple processes the purchase. Cindr may receive subscription status and transaction identifiers from StoreKit to unlock features. Cindr does not receive your payment-card details.</p>
 
         <h2 id="use">How information is used</h2>
         <ul>
           <li>Display a limited stack of messages for you to review.</li>
           <li>Open a message you explicitly choose to inspect.</li>
           <li>Carry out your explicit Keep, Trash, Undo, or unsubscribe decision.</li>
-          <li>Reconnect after token expiration and maintain your Gmail session.</li>
+          <li>Reconnect after token expiration and maintain provider sessions.</li>
           <li>Save unfinished cleanup progress and show aggregate history or widgets.</li>
           <li>Generate transparent, on-device recommendations from aggregate patterns.</li>
           <li>Protect the app, prevent duplicate actions, and recover safe queued operations after connectivity returns.</li>
@@ -63,22 +43,22 @@
 
         <h2 id="storage">Storage and retention</h2>
         <p>OAuth tokens are stored in the iOS Keychain using device-only protection. Other Cindr state is stored in protected Application Support files on your device. Aggregate widget values are stored in the Cindr App Group. The app does not persist rendered message bodies or attachments.</p>
-        <p>Disconnecting Gmail removes its authorization tokens but keeps your local Cindr progress and history on this device, so it can be available if you reconnect. Choose <strong>Delete all Cindr data</strong> or remove the app to erase that local Cindr state. Provider-side mail remains subject to Gmail’s own retention rules. Apple separately manages App Store purchase history and subscriptions.</p>
+        <p>Local information remains until it is no longer needed for an unfinished action, you disconnect a provider, you use <strong>Delete all Cindr data</strong>, or you remove the app. Provider-side mail remains subject to the provider’s own retention rules. Apple separately manages App Store purchase history and subscriptions.</p>
 
         <h2 id="sharing">Disclosure and sharing</h2>
-        <p>Cindr sends requests directly to Gmail to retrieve data and perform the actions you request. A confirmed standards-based one-click unsubscribe may contact the HTTPS endpoint identified by the sender. If you choose a web or email unsubscribe method, your selected browser or mail app handles it.</p>
+        <p>Cindr sends requests directly to your chosen email provider to retrieve data and perform actions you request. A confirmed standards-based one-click unsubscribe may contact the HTTPS endpoint identified by the sender. If you choose a web or email unsubscribe method, your selected browser or mail app handles it.</p>
         <p>Cindr does not sell personal information. It does not share mailbox information with data brokers, advertisers, analytics networks, or AI training services. The production app does not include a mailbox-content analytics service.</p>
 
         <h2 id="google">Google API Services User Data</h2>
         <p>Cindr’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="external">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
         <p>Google user data is used only to provide or improve the user-facing email-cleanup features you request. It is not used for targeted advertising, advertising profiles, creditworthiness, lending, or sale. Humans do not read Google user data except when you provide specific data for support, when required for security or legal compliance, or with your affirmative agreement for a particular purpose.</p>
-        <p>Cindr requests Gmail’s <code>gmail.modify</code> authorization scope to list messages and perform your explicit Trash or Undo decisions. Read-only access cannot perform those actions, and Cindr does not request Gmail send permissions.</p>
+        <p>Cindr requests the Gmail authorization scope required to list and modify mailbox messages. Read-only access cannot perform an explicit Trash or Undo decision, while broader send or full-mail scopes are not requested.</p>
 
         <h2 id="choices">Your choices and controls</h2>
         <ul>
-          <li><strong>Disconnect:</strong> Remove Gmail from Cindr Settings. Your local progress stays on this device unless you delete it.</li>
-          <li><strong>Delete:</strong> Choose Delete all Cindr data to remove Keychain tokens, local and App Group state, and return to onboarding.</li>
-          <li><strong>Google revocation:</strong> Revoke Cindr independently through your Google account security settings.</li>
+          <li><strong>Disconnect:</strong> Remove a connected provider from Cindr Settings.</li>
+          <li><strong>Delete:</strong> Choose Delete all Cindr data to revoke or disconnect where supported, remove Keychain tokens, delete local and App Group state, and return to onboarding.</li>
+          <li><strong>Provider revocation:</strong> Revoke Cindr independently through your Google or Microsoft account security settings.</li>
           <li><strong>Notifications:</strong> Control Cindr notifications in iOS Settings. Notifications do not include message sender or subject by default.</li>
           <li><strong>Subscriptions:</strong> Manage subscriptions separately through your Apple account.</li>
         </ul>
